@@ -1,0 +1,17 @@
+﻿@model List<SampleAutomapper.Models.Person>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Firstname</li>
+        <li>@item.Lastname</li>
+        <li>@item.Adress</li>
+
+    }
+
+</ul>
